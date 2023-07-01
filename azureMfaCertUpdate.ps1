@@ -6,7 +6,7 @@ Connect-AzAccount
 ###############################
 
 $tenantId = (Get-AzTenant).Id
-$certFilePath = "Your-New-Certificate"
+$certFilePath = "Your-CA-approved-Certificate"
 
 ###############################
 # Upload Certificate to Azure #

@@ -49,6 +49,3 @@ certreq -new -machine "$env:TEMP\certrequest.inf" "$env:TEMP\certrequest.csr"
 
 # Submit the CSR to the CA and save the issued certificate to a .cer file
 certreq -submit -AdminForceMachine -config $ca "$env:TEMP\certrequest.csr" $certFilePath
-
-# Accept and install the certificate
-certreq -accept $certFilePath 
